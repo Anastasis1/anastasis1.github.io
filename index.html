@@ -1,9 +1,237 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jane Doe - Mathematician</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul.publications, ul.courses {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.publications li, ul.courses li {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        ul.courses li {
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .course-title {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        .course-details {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <img src="ascona2.jpg" alt="Ascona Image">
+
+    <header>
+        <h1>Dr. Jane Doe</h1>
+        <p>Professor of Mathematics | University of Example</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="home">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website. I am Dr. Jane Doe, a mathematician specializing in algebraic geometry and number theory. I am currently a professor at the University of Example, where I conduct research and teach advanced mathematics courses.</p>
+            <p>My work focuses on solving complex problems in pure mathematics, with applications in cryptography and computational science.</p>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching Experience</h2>
+            <p>I have been teaching mathematics at both undergraduate and graduate levels for over 15 years. My teaching philosophy emphasizes conceptual understanding, problem-solving skills, and real-world applications of mathematical theory.</p>
+            
+            <h3>Courses Taught</h3>
+            <ul class="courses">
+                <li>
+                    <div class="course-title">Advanced Algebraic Geometry (Graduate)</div>
+                    <div class="course-details">
+                        <strong>University of Example</strong> | Fall 2023, Spring 2022<br>
+                        Topics: Schemes, Cohomology, Moduli Spaces<br>
+                        Enrollment: 12 graduate students
+                    </div>
+                </li>
+                <li>
+                    <div class="course-title">Number Theory</div>
+                    <div class="course-details">
+                        <strong>University of Example</strong> | Spring 2024, Fall 2021<br>
+                        Topics: Prime Numbers, Diophantine Equations, Cryptographic Applications<br>
+                        Enrollment: 45 undergraduate students
+                    </div>
+                </li>
+                <li>
+                    <div class="course-title">Abstract Algebra I & II</div>
+                    <div class="course-details">
+                        <strong>University of Example</strong> | Multiple semesters since 2015<br>
+                        Topics: Groups, Rings, Fields, Galois Theory<br>
+                        Student Evaluations: 4.8/5 average
+                    </div>
+                </li>
+                <li>
+                    <div class="course-title">Elliptic Curves and Applications</div>
+                    <div class="course-details">
+                        <strong>University of Example</strong> | Winter 2023<br>
+                        Topics: Elliptic Curve Cryptography, Mordell-Weil Theorem<br>
+                        Special Topics Seminar for advanced undergraduates
+                    </div>
+                </li>
+                <li>
+                    <div class="course-title">Calculus III: Multivariable Calculus</div>
+                    <div class="course-details">
+                        <strong>Various institutions</strong> | 2010-2018<br>
+                        Topics: Vector Calculus, Partial Derivatives, Multiple Integrals
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Teaching Awards & Recognition</h3>
+            <ul>
+                <li><strong>2022:</strong> Excellence in Graduate Teaching Award, University of Example</li>
+                <li><strong>2019:</strong> Distinguished Teaching Professor</li>
+                <li><strong>2017:</strong> Featured in "Outstanding Educators" series</li>
+            </ul>
+
+            <h3>Mentoring & Advising</h3>
+            <ul>
+                <li>Thesis advisor for 8 PhD students (3 graduated)</li>
+                <li>Undergraduate research mentor for 15+ students</li>
+                <li>Co-organizer of Math Club and Problem Solving Workshops</li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Algebraic Geometry</li>
+                <li>Number Theory</li>
+                <li>Elliptic Curves</li>
+                <li>Computational Mathematics</li>
+                <li>Cryptography</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Research Publications</h2>
+            <ul class="publications">
+                <li>
+                    <strong>Title:</strong> Advances in Elliptic Curve Cryptography<br>
+                    <strong>Authors:</strong> Jane Doe, John Smith<br>
+                    <strong>Journal:</strong> Journal of Cryptography, Vol. 45, No. 3 (2023)<br>
+                    <strong>Abstract:</strong> This paper explores new algorithms for elliptic curve computations.<br>
+                    <a href="https://example.com/paper1.pdf">Download PDF</a>
+                </li>
+                <li>
+                    <strong>Title:</strong> On the Geometry of Algebraic Varieties<br>
+                    <strong>Authors:</strong> Jane Doe<br>
+                    <strong>Journal:</strong> Annals of Mathematics, Vol. 200, No. 1 (2022)<br>
+                    <strong>Abstract:</strong> A study of birational transformations in higher dimensions.<br>
+                    <a href="https://example.com/paper2.pdf">Download PDF</a>
+                </li>
+                <li>
+                    <strong>Title:</strong> Number Theoretic Approaches to Prime Factorization<br>
+                    <strong>Authors:</strong> Jane Doe, Alice Johnson<br>
+                    <strong>Journal:</strong> Proceedings of the AMS, Vol. 150, No. 2 (2021)<br>
+                    <strong>Abstract:</strong> Novel methods for factoring large primes using sieve techniques.<br>
+                    <a href="https://example.com/paper3.pdf">Download PDF</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: jane.doe@example.edu</p>
+            <p>Office: Room 123, Math Building, University of Example</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Office Hours: Monday & Wednesday, 2-4 PM</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dr. Jane Doe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
